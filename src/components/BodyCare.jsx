@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import "./BodyCare.css";
 import { MdOutlineLocationOn } from "react-icons/md";
+import { Products } from "./Products";
+import { useState } from "react";
 
 export const BodyCare = () => {
+  const [data, setData] = useState({ Products });
   return (
     <div>
       <p className="small-text">
@@ -101,6 +104,21 @@ export const BodyCare = () => {
             <a href="/">Set Store</a>
           </div>
           <hr className="gray-line" />
+
+          <div className="products-div">
+            {data.Products.map((el) => (
+              <div>
+                <img className="product-image" src={`${el.image}`} alt="" />
+                <p>{el.fragrance_type}</p>
+                <p>{el.title}</p>
+                <p>{el.subtitle}</p>
+                <br />
+                <p>${el.price}0</p>
+                <p>{el.offers}</p>
+                <button>ADD TO BAG</button>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </div>

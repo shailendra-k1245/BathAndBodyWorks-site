@@ -53,3 +53,14 @@
     margin-top:1.5%;
     margin-bottom:1.5%;
 }
+
+.product-image{
+    height:300px;
+}
+
+.products-div{
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+    
+}
+

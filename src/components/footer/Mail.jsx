@@ -1,6 +1,8 @@
 import React from "react";
 import "./mail.scss";
 export default function Mail() {
+
+  
   return (
     <div className="mail">
       <div className="mailContainer">

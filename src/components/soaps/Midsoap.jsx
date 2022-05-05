@@ -79,12 +79,14 @@ export default function Midsoap() {
         </div>
 
         <div>
+          <a href="https://www.bathandbodyworks.com/c/hand-soaps-sanitizers/gentle-and-clean-soaps">
           <img
             src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw300d16be/images/Spring2022/sp_hhq_0_sp1_lb.jpg?yocs=s_"
             alt=""
           />
+          </a>
         </div>
-
+        
         <div className="shopCategory">
           <p>
             <div></div>
@@ -94,10 +96,12 @@ export default function Midsoap() {
         </div>
 
         <div>
+          <a href="https://www.bathandbodyworks.com/c/hand-soaps-sanitizers/gentle-and-clean-soaps">
           <img
             src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw5be7ba21/images/Spring2022/sp_core_0_sp1_lb.jpg?yocs=s_"
             alt=""
           />
+          </a>
         </div>
 
         <Aboutsoap />

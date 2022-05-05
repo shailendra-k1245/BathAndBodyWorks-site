@@ -55,12 +55,28 @@
 }
 
 .product-image{
-    height:300px;
+    height:18.75rem;
 }
 
 .products-div{
+    margin-left:5%;
     display: grid;
     grid-template-columns: repeat(4,auto);
+    column-gap:.625rem;
+    row-gap: 6.25rem;
     
 }
 
+.single-product-div{
+    text-align: center;
+}
+
+.products-div > div > p{
+    line-height:0;
+}
+
+.product-button{
+    background-color:#343332;
+    color:white;
+    padding:2% 10%;
+}

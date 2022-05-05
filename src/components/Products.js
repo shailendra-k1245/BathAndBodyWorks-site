@@ -29,7 +29,7 @@ export const Products = [
   {
     image:
       "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwba77ffbc/crop/026267868_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-    fragrance_type: "",
+    fragrance_type: "New",
     title: "Ocean",
     subtitle: "Body Spray",
     price: 13.5,
@@ -38,7 +38,7 @@ export const Products = [
   {
     image:
       "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw81522767/crop/026401914_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-    fragrance_type: "",
+    fragrance_type: "New Fragrance",
     title: "Pineapple Lime Eucalyptus",
     subtitle: "Essential Oil Mist",
     price: 15.5,
@@ -92,7 +92,7 @@ export const Products = [
   {
     image:
       "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw7c6a3bb3/crop/026400330_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-    fragrance_type: "",
+    fragrance_type: "New Fragrance",
     title: "Strawberry Pound Cake",
     subtitle: "Fine Fragrance Mist",
     price: 17.5,
@@ -110,7 +110,7 @@ export const Products = [
   {
     image:
       "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwc189b575/crop/026240389_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-    fragrance_type: "",
+    fragrance_type: "New",
     title: "A Thousand Wishes",
     subtitle: "Super Smooth Body Lotion",
     price: 13.5,
@@ -119,7 +119,7 @@ export const Products = [
   {
     image:
       "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw8a157107/crop/026353232_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
-    fragrance_type: "",
+    fragrance_type: "New Fragrance",
     title: "Lavender and Vanilla",
     subtitle: "Pillow and Body Mist",
     price: 14.5,

@@ -3,9 +3,13 @@ import "./BodyCare.css";
 import { MdOutlineLocationOn } from "react-icons/md";
 import { Products } from "./Products";
 import { useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { addProduct } from "../Redux/action";
 
 export const BodyCare = () => {
   const [data, setData] = useState({ Products });
+  const dispatch = useDispatch();
+  const products = useSelector((store) => store.products);
   return (
     <div>
       <p className="small-text">
@@ -107,15 +111,24 @@ export const BodyCare = () => {
 
           <div className="products-div">
             {data.Products.map((el) => (
-              <div>
+              <div className="single-product-div">
                 <img className="product-image" src={`${el.image}`} alt="" />
-                <p>{el.fragrance_type}</p>
-                <p>{el.title}</p>
-                <p>{el.subtitle}</p>
+                <p>
+                  <i>{el.fragrance_type}</i>
+                </p>
+                <b>{el.title}</b>
+                <p className="small-text">{el.subtitle}</p>
                 <br />
-                <p>${el.price}0</p>
-                <p>{el.offers}</p>
-                <button>ADD TO BAG</button>
+                <b>${el.price}0</b>
+                <p className="small-text" style={{ lineHeight: 1 }}>
+                  {el.offers}
+                </p>
+                <button
+                  className="product-button small-text"
+                  onClick={() => dispatch(addProduct(el))}
+                >
+                  ADD TO BAG
+                </button>
               </div>
             ))}
           </div>

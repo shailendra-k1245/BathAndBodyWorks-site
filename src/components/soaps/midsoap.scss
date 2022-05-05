@@ -36,6 +36,36 @@
         }
 
     }
+    .soapProduct {
+        //   border: 1px solid red;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 20px;
+          .proSoap {
+            div {
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              img {
+                // border: 1px solid red;
+                height: 280px;
+              }
+              button {
+                font-size: 0.75rem;
+                font-weight: 600;
+                width: 200px;
+                height: 35px;
+                border: 2px solid black;
+                background: none;
+                cursor: pointer;
+                &:hover {
+                  background-color: #1a1a1a;
+                  color: white;
+                }
+              }
+            }
+          }
+        }
     .rightSoap{
         width: 80%;
 

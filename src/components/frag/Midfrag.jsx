@@ -1,12 +1,12 @@
 import React from "react";
-import "./midsoap.scss";
-import { topOffers, featured, handSoap, sanitizer, gift, soapProduct} from "./soapData";
-import Aboutsoap from "./Aboutsoap";
+import "./midfrag.scss";
+import { topOffers, featured, handSoap, sanitizer, product } from "./soapData";
+import Aboutfrag from "./Aboutfrag";
 
-export default function Midsoap() {
+export default function MidFrag() {
   return (
-    <div className="midSoap">
-      <div className="leftSoap">
+    <div className="midFrag">
+      <div className="leftFrag">
         <div>
           <p>TOP OFFERS</p>
           <ul>
@@ -34,7 +34,7 @@ export default function Midsoap() {
         </div>
 
         <div>
-          <p>HAND SOAPS</p>
+          <p>CANDLES</p>
           <ul>
             {handSoap.map((d) => {
               return (
@@ -47,7 +47,7 @@ export default function Midsoap() {
         </div>
 
         <div>
-          <p>HAND SANITIZERS</p>
+          <p>AIR FRESHENERS</p>
           <ul>
             {sanitizer.map((d) => {
               return (
@@ -58,36 +58,23 @@ export default function Midsoap() {
             })}
           </ul>
         </div>
-
-        <div>
-          <p>GIFT STES</p>
-          <ul>
-            {gift.map((d) => {
-              return (
-                <a href="google.com">
-                  <li>{d.link}</li>
-                </a>
-              );
-            })}
-          </ul>
-        </div>
       </div>
-      <div className="rightSoap">
-        <div className="topSoap">
-          <p>Hand Soaps & Sanitizers</p>
+      <div className="rightFrag">
+        <div className="topFrag">
+          <p>Home Fragrance</p>
           <div className="hline"></div>
         </div>
 
         <div>
           <a href="https://www.bathandbodyworks.com/c/hand-soaps-sanitizers/gentle-and-clean-soaps">
-          <img
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw300d16be/images/Spring2022/sp_hhq_0_sp1_lb.jpg?yocs=s_"
-            alt=""
-          />
+            <img
+              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw63538dd8/images/Spring2022/xcat_homefrag_0_sp1_lb.jpg?yocs=s_"
+              alt=""
+            />
           </a>
         </div>
-        
-        <div className="shopCategory">
+
+        <div className="shopCat">
           <p>
             <div></div>
             SHOP BY CATEGORY
@@ -95,10 +82,10 @@ export default function Midsoap() {
           </p>
         </div>
 
-        <div className="soapProduct">
-          {soapProduct.map((d) => {
+        <div className="fragProduct">
+          {product.map((d) => {
             return (
-              <div className="proSoap">
+              <div className="pro">
                 <div>
                   <a href="https://www.bathandbodyworks.com/c/home-fragrance/all-candles">
                     <img src={d.img} alt="" />
@@ -113,14 +100,14 @@ export default function Midsoap() {
 
         <div>
           <a href="https://www.bathandbodyworks.com/c/hand-soaps-sanitizers/gentle-and-clean-soaps">
-          <img
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw5be7ba21/images/Spring2022/sp_core_0_sp1_lb.jpg?yocs=s_"
-            alt=""
-          />
+            <img
+              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw2297f3fb/images/Spring2022/xcat_oasis-preview-home_sp3_lb.jpg?yocs=s_"
+              alt=""
+            />
           </a>
         </div>
 
-        <Aboutsoap />
+        <Aboutfrag />
       </div>
     </div>
   );

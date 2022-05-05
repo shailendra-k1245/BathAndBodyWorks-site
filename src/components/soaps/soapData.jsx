@@ -87,7 +87,18 @@ export const gift = [
 ]
 
 
-
+export const soapProduct = [
+    {
+        id: 1,
+        title: "FOAMING SOAPS",
+        img: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwc2ca9e1d/images/Spring2022/sp_spring-foaming_0_sp1_vn.jpg?yocs=o_s_"
+    },
+    {
+        id: 1,
+        title: "GEL SOAPS",
+        img: "https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw48c056fd/images/Spring2022/sp_spring-gel_0_sp1_vn.jpg?yocs=o_s_"
+    }
+]
 
 
 

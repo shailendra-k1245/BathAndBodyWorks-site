@@ -13,6 +13,7 @@ import { BodyCare } from "./components/BodyCare";
 import { Gift } from "./components/Gifts";
 import { TopOffers } from "./components/TopOffers";
 import { Bag } from "./components/Bag/Bag";
+import { Shipping } from "./components/Shipping/Shipping";
 
 
 function App() {
@@ -27,12 +28,12 @@ function App() {
           className="s"
           placeholder="Search by Fragrance or product....   	"
         ></input>
-        <img
+        <img style={{cursor:"pointer"}}
           className="i"
           src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwc807e833/images/svg-icons/UI-MyAccount.svg?yocs=o_s_"
         ></img>
         <div className="b11">
-          <BsBag onClick={() =>navigate("/shopping-bag")}/>
+          <BsBag onClick={() =>navigate("/shopping-bag")} style={{cursor: "pointer"}}/>
         </div>
       </div>
 
@@ -63,6 +64,7 @@ function App() {
         <Route path="/gifts" element={<Gift />} />
         <Route path="/top-offers" element={<TopOffers />} />
         <Route path="/shopping-bag" element={<Bag/>}/>
+        <Route path="/shipping" element={<Shipping />}/>
         
       </Routes>
 

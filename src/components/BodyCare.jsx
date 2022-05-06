@@ -110,10 +110,10 @@ export const BodyCare = () => {
           <hr className="gray-line" />
 
           <div className="products-div">
-            {data.Products.map((el) => (
+            {data.Products.map((el, i) => (
               <div className="single-product-div">
-                <img className="product-image" src={`${el.image}`} alt="" /> 
-                <p >
+                <img className="product-image" src={`${el.image}`} alt="" />
+                <p>
                   <i className="blue-text">{el.fragrance_type}</i>
                 </p>
                 <b>{el.title}</b>
@@ -123,9 +123,12 @@ export const BodyCare = () => {
                 <p className="small-text red-text" style={{ lineHeight: 1 }}>
                   {el.offers}
                 </p>
+
                 <button
                   className="product-button small-text"
-                  onClick={() => dispatch(addProduct(el))}
+                  onClick={() =>
+                    dispatch(addProduct(el)) && alert("Added to cart")
+                  }
                 >
                   ADD TO BAG
                 </button>

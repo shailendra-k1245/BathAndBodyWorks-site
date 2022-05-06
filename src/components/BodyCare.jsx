@@ -13,7 +13,7 @@ export const BodyCare = () => {
   return (
     <div>
       <p className="small-text">
-        <Link to="/">HOME </Link> / BODY CARE{" "}
+        <Link to="/">HOME </Link> / BODY CARE
       </p>
       <div className="BodyCare-div">
         <div className="table">

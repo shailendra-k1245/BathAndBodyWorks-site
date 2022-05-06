@@ -113,14 +113,14 @@ export const BodyCare = () => {
             {data.Products.map((el) => (
               <div className="single-product-div">
                 <img className="product-image" src={`${el.image}`} alt="" /> 
-                <p>
-                  <i>{el.fragrance_type}</i>
+                <p >
+                  <i className="blue-text">{el.fragrance_type}</i>
                 </p>
                 <b>{el.title}</b>
                 <p className="small-text">{el.subtitle}</p>
                 <br />
                 <b>${el.price}0</b>
-                <p className="small-text" style={{ lineHeight: 1 }}>
+                <p className="small-text red-text" style={{ lineHeight: 1 }}>
                   {el.offers}
                 </p>
                 <button

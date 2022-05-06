@@ -10,15 +10,23 @@
 .myBlue{
     color:#394368;
 }
+.blue-text{
+    color:#005699;
+    font-weight: 500;
+}
+.red-text{
+    color:#CF0000;
+}
 
 .product-heading-div{
     display: flex;
     justify-content:space-between;
-    border:1px solid red;
+    border:1px solid transparent;
 }
 
 .BodyCare-div{
     display:flex;
+    text-align: left;
 }
 
 
@@ -71,9 +79,9 @@
     text-align: center;
 }
 
-.products-div > div > p{
+/* .products-div > div > p{
     line-height:0;
-}
+} */
 
 .product-button{
     background-color:#343332;

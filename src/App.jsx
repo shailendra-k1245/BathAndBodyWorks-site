@@ -1,17 +1,27 @@
 import "./App.css";
 import { Homepage } from "./components/HomePage";
-import { Link } from "react-router-dom";
 
-import { Routes, Route, useLocation } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  useLocation,
+  Link,
+  useNavigate,
+} from "react-router-dom";
 import { BsBag } from "react-icons/bs";
 import { BodyCare } from "./components/BodyCare";
+import { Gift } from "./components/Gifts";
+import { TopOffers } from "./components/TopOffers";
+import { Bag } from "./components/Bag/Bag";
+
 
 function App() {
+  const navigate = useNavigate();
   const location = useLocation();
   return (
     <div className="App">
       <div className="App1">
-        <div className="t">Bath & Body Works </div>
+        <div className="t" onClick={() =>navigate("/")}>Bath & Body Works </div>
 
         <input
           className="s"
@@ -22,7 +32,7 @@ function App() {
           src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwc807e833/images/svg-icons/UI-MyAccount.svg?yocs=o_s_"
         ></img>
         <div className="b11">
-          <BsBag />
+          <BsBag onClick={() =>navigate("/shopping-bag")}/>
         </div>
       </div>
 
@@ -50,6 +60,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Homepage />}></Route>
         <Route path="/bodycare" element={<BodyCare />}></Route>
+        <Route path="/gifts" element={<Gift />} />
+        <Route path="/top-offers" element={<TopOffers />} />
+        <Route path="/shopping-bag" element={<Bag/>}/>
+        
       </Routes>
 
       {location.pathname === "/" ? <Homepage /> : ""}

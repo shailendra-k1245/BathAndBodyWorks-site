@@ -112,7 +112,7 @@ export const BodyCare = () => {
           <div className="products-div">
             {data.Products.map((el) => (
               <div className="single-product-div">
-                <img className="product-image" src={`${el.image}`} alt="" />
+                <img className="product-image" src={`${el.image}`} alt="" /> 
                 <p>
                   <i>{el.fragrance_type}</i>
                 </p>

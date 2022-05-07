@@ -86,7 +86,8 @@ export const Login = () => {
               src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwf946a6ac/images/loyalty/July19/nonloyalty_5thmkt_signuptile_D.png?yocs=s_"
               alt=""
             />
-            <button className="product-button">CREATE AN ACCOUNT</button>
+            <button className="product-button"
+            onClick={() =>navigate("/register")}>CREATE AN ACCOUNT</button>
           </div>
         </div>
         <div className="questions">

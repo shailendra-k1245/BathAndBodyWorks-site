@@ -20,6 +20,7 @@ import Soap from "./components/Soaps/Soap";
 import Fragrance from "./components/Fragrance/Frag";
 import { Payment } from "./components/Payment/Payment";
 import { Login } from "./components/Login/Login";
+import { SignUp } from "./components/Signup/Signup";
 
 function App() {
   const navigate = useNavigate();
@@ -82,6 +83,7 @@ function App() {
         <Route path="/soaps" element={<Soap />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<SignUp/>}/>
       </Routes>
 
       {location.pathname === "/" ? <Homepage /> : ""}

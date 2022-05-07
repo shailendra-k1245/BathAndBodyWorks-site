@@ -1,15 +1,10 @@
-import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import "./Payment.css";
 export const Payment = () => {
-  const [udata, setUdata] = useState("");
-
-  useEffect(() => {
-    axios
-      .get("http://localhost:8080/useraddress")
-      .then((res) => setUdata(res.data[res.data.length - 1]));
-  }, []);
-  console.log(udata);
+  const udata = useSelector((store) => store.userAddress);
+  const navigate = useNavigate();
   const loadScript = (src) => {
     return new Promise((resolve) => {
       const script = document.createElement("script");
@@ -38,7 +33,7 @@ export const Payment = () => {
     var options = {
       key: "rzp_test_LCdjMrzlhIQNh8", // Enter the Key ID generated from the Dashboard
       amount: "50000", // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise or INR 500.
-      currency: "INR",
+      currency: "USD",
       name: "Payment Page",
       description: "Ecommerce",
       image: "image",
@@ -46,10 +41,11 @@ export const Payment = () => {
       handler: function (response) {
         alert("Order Placed Sucsessfully");
         //navigate to home page
+        navigate("/");
       },
       prefill: {
         name: udata.first_name + udata.last_name,
-        email: "dhananjaydhoke3@gmail.com",
+        email: `${udata.first_name+udata.last_name}@mail.com`,
         contact: udata.mobile,
       },
 

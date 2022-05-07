@@ -9,7 +9,7 @@ import Mid from "./Mid";
 export default function Footer() {
   return (
     <div className="footer">
-      <div className="upSide"></div>
+      {/* <p className="upSide"></p> */}
 
       <div className="line"></div>
 
@@ -23,7 +23,7 @@ export default function Footer() {
               <ul>
                 {customer.map((d) => {
                   return (
-                    <a href="google.com">
+                    <a href="google.com" key={d.link}>
                       <li>{d.link}</li>
                     </a>
                   );
@@ -36,7 +36,7 @@ export default function Footer() {
               <ul>
                 {account.map((d) => {
                   return (
-                    <a href="google.com">
+                    <a href="google.com" key={d.link}>
                       <li>{d.link}</li>
                     </a>
                   );
@@ -49,7 +49,7 @@ export default function Footer() {
               <ul>
                 {discover.map((d) => {
                   return (
-                    <a href="google.com">
+                    <a href="google.com" key={d.link}>
                       <li>{d.link}</li>
                     </a>
                   );
@@ -62,7 +62,7 @@ export default function Footer() {
               <ul>
                 {find.map((d) => {
                   return (
-                    <a href="google.com">
+                    <a href="google.com" key={d.link}>
                       <li>{d.link}</li>
                     </a>
                   );

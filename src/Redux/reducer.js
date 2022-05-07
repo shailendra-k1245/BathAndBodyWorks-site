@@ -1,8 +1,9 @@
-import { ADD_PRODUCT, AUTH } from "./action";
+import { ADDRESS_DATA, ADD_PRODUCT, AUTH } from "./action";
 
 const initState = {
     auth : false,
-    products:[]
+    products:[],
+    userAddress:{}
 }
 
 export const reducer = (store=initState,{type,payload})=>{
@@ -11,6 +12,8 @@ export const reducer = (store=initState,{type,payload})=>{
             return {...store,products:[...store.products,payload]}
         case AUTH:
             return {...store,auth:payload}
+        case ADDRESS_DATA:    
+            return {...store,userAddress:payload}
         default:
             return store;
     }

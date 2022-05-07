@@ -18,7 +18,8 @@ import { NewNow } from "./components/NewNow/NewNow";
 import Footer from "./components/Footer/Footer";
 import Soap from "./components/Soaps/Soap";
 import Fragrance from "./components/Fragrance/Frag";
-
+import { Payment } from "./components/Payment/Payment";
+import { Login } from "./components/Login/Login";
 
 function App() {
   const navigate = useNavigate();
@@ -26,18 +27,25 @@ function App() {
   return (
     <div className="App">
       <div className="App1">
-        <div className="t" onClick={() =>navigate("/")}>Bath & Body Works </div>
+        <div className="t" onClick={() => navigate("/")}>
+          Bath & Body Works{" "}
+        </div>
 
         <input
           className="s"
           placeholder="Search by Fragrance or product....   	"
         ></input>
-        <img style={{cursor:"pointer"}}
+        <img
+          onClick={() => navigate("/login")}
+          style={{ cursor: "pointer" }}
           className="i"
           src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwc807e833/images/svg-icons/UI-MyAccount.svg?yocs=o_s_"
         ></img>
         <div className="b11">
-          <BsBag onClick={() =>navigate("/shopping-bag")} style={{cursor: "pointer"}}/>
+          <BsBag
+            onClick={() => navigate("/shopping-bag")}
+            style={{ cursor: "pointer",fontSize:"1.25rem" }}
+          />
         </div>
       </div>
 
@@ -67,15 +75,17 @@ function App() {
         <Route path="/bodycare" element={<BodyCare />}></Route>
         <Route path="/gifts" element={<Gift />} />
         <Route path="/top-offers" element={<TopOffers />} />
-        <Route path="/shopping-bag" element={<Bag/>}/>
-        <Route path="/shipping" element={<Shipping />}/>
-        <Route path="/newnow" element={<NewNow/>}/>
-        <Route path="/fragrance" element={<Fragrance/>}/>
-        <Route path="/soaps" element={<Soap/>}/>
+        <Route path="/shopping-bag" element={<Bag />} />
+        <Route path="/shipping" element={<Shipping />} />
+        <Route path="/newnow" element={<NewNow />} />
+        <Route path="/fragrance" element={<Fragrance />} />
+        <Route path="/soaps" element={<Soap />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
 
       {location.pathname === "/" ? <Homepage /> : ""}
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -2,7 +2,7 @@
 
 .payment-main-div{
     display: flex;
-    
+    text-align: left;
     width: 50%;
     margin: auto;
     justify-content: space-between;

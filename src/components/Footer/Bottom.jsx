@@ -8,7 +8,7 @@ export default function Bottom() {
         <ul>
           {bottom.map((d) => {
             return (
-              <a href="google.com">
+              <a href="google.com" key={d.link}>
                 <li>{d.link}</li>
               </a>
             );

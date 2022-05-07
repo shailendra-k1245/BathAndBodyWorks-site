@@ -86,7 +86,7 @@ function App() {
         <Route path="/register" element={<SignUp/>}/>
       </Routes>
 
-      {location.pathname === "/" ? <Homepage /> : ""}
+      {/* {location.pathname === "/" ? <Homepage /> : ""} */}
       <Footer />
     </div>
   );

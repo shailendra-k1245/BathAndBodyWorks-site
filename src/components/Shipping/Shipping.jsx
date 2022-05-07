@@ -1,5 +1,10 @@
+import { useState } from "react";
+import { useSelector } from "react-redux";
 import "./Shipping.css";
 export const Shipping = () => {
+  const cartItems = useSelector((store) => store.products);
+
+  const [data, setData] = useState({});
   return (
     <>
       <div className="shipping-main-div">
@@ -78,18 +83,14 @@ export const Shipping = () => {
           <hr />
           <div className="shipping-flexdiv">
             <div className="shipping-left-flexdiv">
-              <img
-                className="shipping-img-div"
-                src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwf97a6473/crop/026414639_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_"
-                alt=""
-              />
+              {cartItems.map((el) => (
+                <img className="shipping-img-div" src={el.image} alt="" />
+              ))}
             </div>
             <div className="shipping-right-flexdiv">
-              <p>sdljflsdj</p>
-              <p>hjdhflshdlfsld</p>
-              <p>fjsdjfsdj;fjs</p>
-              <p>hflsdhfshdlfk</p>
-              <p>shananajjau</p>
+              {cartItems.map((el) => (
+                <p style={{ lineHeight: 3.3 }}>{el.title}</p>
+              ))}
             </div>
           </div>
           <hr />

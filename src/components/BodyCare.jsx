@@ -9,7 +9,7 @@ import { addProduct } from "../Redux/action";
 export const BodyCare = () => {
   const [data, setData] = useState({ Products });
   const dispatch = useDispatch();
-  const products = useSelector((store) => store.products);
+
   return (
     <div>
       <p className="small-text">
@@ -94,12 +94,15 @@ export const BodyCare = () => {
             <button className="black-button">MEN'S</button>
           </div>
           <div className="sorting-options">
-            <p>Filter By: </p>
-            <select name="" id=""></select>
-            <select name="" id=""></select>
-            <select name="" id=""></select>
-            <select name="" id=""></select>
-            <select name="" id=""></select>
+            <p>Sort By: </p>
+            <select name="" id="">
+              <option value=""></option>
+              <option value="">price low to high</option>
+              <option value="">price high to low</option>
+              <option value="">title A-Z</option>
+              <option value="">fragrance </option>
+              <option value="">type</option>
+            </select>
           </div>
           <hr className="gray-line" />
           <div className="location-div">

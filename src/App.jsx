@@ -14,6 +14,10 @@ import { Gift } from "./components/Gifts";
 import { TopOffers } from "./components/TopOffers";
 import { Bag } from "./components/Bag/Bag";
 import { Shipping } from "./components/Shipping/Shipping";
+import { NewNow } from "./components/NewNow/NewNow";
+import Footer from "./components/Footer/Footer";
+import Soap from "./components/Soaps/Soap";
+import Fragrance from "./components/Fragrance/Frag";
 
 
 function App() {
@@ -39,7 +43,7 @@ function App() {
 
       <div className="l">
         {" "}
-        <Link to="/newandnow" className="App2">
+        <Link to="/newnow" className="App2">
           NEW & NOW
         </Link>
         <Link to="/bodycare" className="App2">
@@ -65,10 +69,13 @@ function App() {
         <Route path="/top-offers" element={<TopOffers />} />
         <Route path="/shopping-bag" element={<Bag/>}/>
         <Route path="/shipping" element={<Shipping />}/>
-        
+        <Route path="/newnow" element={<NewNow/>}/>
+        <Route path="/fragrance" element={<Fragrance/>}/>
+        <Route path="/soaps" element={<Soap/>}/>
       </Routes>
 
       {location.pathname === "/" ? <Homepage /> : ""}
+      <Footer/>
     </div>
   );
 }

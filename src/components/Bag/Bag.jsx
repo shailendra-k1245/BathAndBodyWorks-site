@@ -50,12 +50,14 @@ export const Bag = () => {
 
         <div className="bag-table-div">
           <table className="bag-table">
-            <tr>
-              <th style={{ width: "35%", "text-align": "left" }}>ITEM</th>
-              <th style={{ width: "12%" }}>PRICE</th>
-              <th style={{ width: "15%" }}>QTY</th>
-              <th style={{ width: "35%" }}>TOTAL PRICE</th>
-            </tr>
+            <thead>
+              <tr>
+                <th style={{ width: "35%", textAlign: "left" }}>ITEM</th>
+                <th style={{ width: "12%" }}>PRICE</th>
+                <th style={{ width: "15%" }}>QTY</th>
+                <th style={{ width: "35%" }}>TOTAL PRICE</th>
+              </tr>
+            </thead>
 
             {/* <tr>
               <td>{"img"}</td>
@@ -63,21 +65,25 @@ export const Bag = () => {
               <td>{1}</td>
               <td>{200}</td>
             </tr> */}
-            {bagItems.map((el) => (
-              <tr>
-                <td>
-                  <img className="table-image" src={el.image} alt="" />
-                  <p>{el.title}</p>
-                </td>
-                <td>${el.price}0</td>
-                <td>{1}</td>
-                <td>${el.price}0</td>
-              </tr>
-            ))}
+            <tbody>
+              {bagItems.map((el) => (
+                <tr>
+                  <td>
+                    <img className="table-image" src={el.image} alt="" />
+                    <p>{el.title}</p>
+                  </td>
+                  <td>${el.price}0</td>
+                  <td>{1}</td>
+                  <td>${el.price}0</td>
+                </tr>
+              ))}
+            </tbody>
           </table>
           <hr />
         </div>
-        <button className="update-bag">UPDATE BAG</button>
+        <button className="update-bag" onClick={() => navigate("/bodycare")}>
+          UPDATE BAG
+        </button>
         <hr />
         <div className="bag-coupan-div">
           <div className="bag-promotion-div">

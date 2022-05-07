@@ -1,0 +1,23 @@
+{
+  "useraddress": [
+    {
+      "address": "edf",
+      "city": "fsdf",
+      "first_name": "Dhananjay",
+      "last_name": "Dhoke",
+      "mobile": "8788920000",
+      "state": "",
+      "zipcode": "34543",
+      "id": 1
+    }, {
+      "address": "edf",
+      "city": "fsdf",
+      "first_name": "ajay",
+      "last_name": "Dhoke",
+      "mobile": "878jhns",
+      "state": "",
+      "zipcode": "345435555",
+      "id": 2
+    }
+  ]
+}

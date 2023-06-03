@@ -5,9 +5,9 @@ Bath & Body Works, LLC. is an American retail store chain that sells soaps, loti
 
 # Home Page
 
-![HomePage](![image](https://github.com/shailendra-k1245/BathAndBodyWorks-site/assets/91621557/38c1797f-ca6c-4086-9a6b-addc10f321fd))
-![HomePage1](![image](https://github.com/shailendra-k1245/BathAndBodyWorks-site/assets/91621557/a2eef37b-7ee7-4f31-8403-4de567c5bc87))
-![homePage2]![image](https://github.com/shailendra-k1245/BathAndBodyWorks-site/assets/91621557/7a1680a0-54f8-4a69-93a8-520f22cfd468)
+(![image](https://github.com/shailendra-k1245/BathAndBodyWorks-site/assets/91621557/38c1797f-ca6c-4086-9a6b-addc10f321fd))
+(![image](https://github.com/shailendra-k1245/BathAndBodyWorks-site/assets/91621557/a2eef37b-7ee7-4f31-8403-4de567c5bc87))
+(![image](https://github.com/shailendra-k1245/BathAndBodyWorks-site/assets/91621557/7a1680a0-54f8-4a69-93a8-520f22cfd468)
 
 
 # New and Now

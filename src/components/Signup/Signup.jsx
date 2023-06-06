@@ -19,7 +19,7 @@ export const SignUp = () => {
   };
 
   const handleClick = ()=>{
-      axios.post("http://still-badlands-85906.herokuapp.com/users",formData)
+      axios.post("https://hotel-api-gavf.onrender.com/users",formData)
       .then(()=>navigate("/"))
   }
 

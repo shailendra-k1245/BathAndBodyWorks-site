@@ -1,10 +1,17 @@
 import "./HomePage.css"
+import homepage1 from "../assets/homepage1.jpg";
+import hm2 from "../assets/hm2.jpg";
+import hm3 from "../assets/hm3.jpg";
+import hm4 from "../assets/hm4.jpg";
+import shopBodyCare from "../assets/shopBodyCare.jpg";
+import shopCandles from "../assets/shopCandles.jpg";
+import wallFlower from "../assets/wallFlower.jpg";
 export const Homepage = () => {
   return (
     <div>
       <img
         className="i1"
-        src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw703cd090/images/Spring2022/fbc_mday_sp3_hm.jpg?yocs=s_"
+        src={homepage1}
       ></img>
       <div className="b">
         <h1 id="h1">TODAY'S TOP OFFERS</h1>
@@ -47,13 +54,13 @@ export const Homepage = () => {
       <div id="d3">
         <img
           id="i2"
-          src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0f646ce5/images/Spring2022/oo-pwp-sp3-atb-lto.jpg?yocs=o_s_"
+          src={hm2}
         ></img>
         <div>
           {" "}
           <img
             id="i3"
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dw57c95821/hires/025144398_alt_1.jpg?sh=413&yocs=o_s_"
+            src={hm3}
           ></img>
           <h2 id="h3">New!</h2>
           <h3 id="h4">Limited Edition</h3>
@@ -65,7 +72,7 @@ export const Homepage = () => {
       <div>
         <img
           id="i4"
-          src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw377d7fac/images/Spring2022/diff_mday_sp3_hm.jpg?yocs=s_"
+          src={hm4}
         ></img>
       </div>
       <h2>SHOP BY CATEGORY</h2>
@@ -73,21 +80,21 @@ export const Homepage = () => {
         <div>
           <img
             className="i51"
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw8d1d6d80/images/Spring2022/fbc_butterfly_sp3_vn.jpg?yocs=o_s_"
+            src={shopBodyCare}
           ></img>
           <p>Shop Body Care</p>
         </div>
         <div>
           <img
             className="i51"
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwffda5c2c/images/Spring2022/cndl_mday-all_sp3_vn.jpg?yocs=o_s_"
+            src={shopCandles}
           ></img>
           <p>Shop Candles</p>
         </div>
         <div>
           <img
             className="i51"
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwa9dab2b4/images/Spring2022/diff_mday_sp3_vn.jpg?yocs=o_s_"
+            src={wallFlower}
           ></img>
           <p>Shop Wallflowers</p>
         </div>

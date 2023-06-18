@@ -3,6 +3,10 @@ import "./Gifts.css";
 import giftsImg from "../assets/gifts.jpg";
 import mothersDay from "../assets/mothersDay.jpg";
 import giftsShop from "../assets/giftsShop.jpg";
+import gifts30 from "../assets/gifts30.jpg";
+import gifts50 from "../assets/gifts50.jpg";
+import giftCard from "../assets/giftcard.jpg";
+
 export const Gift = () => {
   const giftdata = [
     { title: "FEATURED", subtitle: ["Mother Day Gifts", "Gift Sets"] },
@@ -68,17 +72,17 @@ export const Gift = () => {
               alt=""
             />
             <img
-              src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw5dad3108/images/Spring2022/xcat_gifts-30_0_sp1_ls.jpg"
+              src={gifts30}
               alt=""
             />
             <img
-              src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw7fbd598c/images/Spring2022/xcat_gifts-50_0_sp1_ls.jpg"
+              src={gifts50}
               alt=""
             />
           </div>
           <img
             className="gift-img"
-            src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw4656efd7/images/Spring2022/xcat_giftcards_0_sp1_lb.jpg"
+            src={giftCard}
             alt=""
           />
           <div className="box-div">

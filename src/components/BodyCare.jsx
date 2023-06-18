@@ -5,6 +5,7 @@ import { Products } from "./Products";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { addProduct } from "../Redux/action";
+import heading from "../assets/heading.jpg";
 
 export const BodyCare = () => {
   const [data, setData] = useState({ Products });
@@ -80,7 +81,7 @@ export const BodyCare = () => {
           </div>
           <hr />
           <img
-            src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw0817b914/images/Spring2022/tbctier_sp3_gh.jpg?yocs=s_"
+            src={heading}
             alt=""
           />
           <div className="black-buttons-div">

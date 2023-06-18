@@ -1,5 +1,8 @@
 import React from "react";
 import "./Gifts.css";
+import giftsImg from "../assets/gifts.jpg";
+import mothersDay from "../assets/mothersDay.jpg";
+import giftsShop from "../assets/giftsShop.jpg";
 export const Gift = () => {
   const giftdata = [
     { title: "FEATURED", subtitle: ["Mother Day Gifts", "Gift Sets"] },
@@ -50,18 +53,18 @@ export const Gift = () => {
           <div>
             <img
               className="gift-img"
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwacddf680/images/Spring2022/xcat_gifts_0_sp1_lb.jpg?yocs=s_"
+              src={giftsImg}
               alt=""
             />
             <img
               className="gift-img"
-              src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw049e204d/images/Spring2022/xcat_give-love-mday_sp3_lb.jpg?yocs=s_"
+              src={mothersDay}
               alt=""
             />
           </div>
           <div className="flex-div">
             <img
-              src="https://www.bathandbodyworks.com/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw4a854cce/images/Spring2022/xcat_gifts-15_0_sp1_ls.jpg"
+              src={giftsShop}
               alt=""
             />
             <img

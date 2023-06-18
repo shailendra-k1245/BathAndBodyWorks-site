@@ -21,6 +21,7 @@ import Fragrance from "./components/Fragrance/Frag";
 import { Payment } from "./components/Payment/Payment";
 import { Login } from "./components/Login/Login";
 import { SignUp } from "./components/Signup/Signup";
+import icon from "./assets/UI-MyAccount.svg";
 
 function App() {
   const navigate = useNavigate();
@@ -40,7 +41,7 @@ function App() {
           onClick={() => navigate("/login")}
           style={{ cursor: "pointer" }}
           className="i"
-          src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.216/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dwc807e833/images/svg-icons/UI-MyAccount.svg?yocs=o_s_"
+          src={icon}
         ></img>
         <div className="b11">
           <BsBag
